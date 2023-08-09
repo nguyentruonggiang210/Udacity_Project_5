@@ -55,11 +55,6 @@ functions:
     -   Effect: Allow
         Action:
           - dynamodb:Query
-          - dynamodb:Scan
-          - dynamodb:GetItem
-          - dynamodb:PutItem
-          - dynamodb:UpdateItem
-          - dynamodb:DeleteItem
         Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.EMPLOYEE_GROUP_TABLE}
     -   Effect: Allow
         Action:
